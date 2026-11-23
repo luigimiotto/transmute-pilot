@@ -23,16 +23,21 @@ st.set_page_config(page_title="TransMuTe | Pilot Database", page_icon="🎼", la
 st.markdown("""
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap');
-:root { --ink: #18324A; --gold: #C39A43; --paper: #FBF9F4; }
+:root { --ink: #102B4E; --gold: #D6A833; --electric: #1769FF; --paper: #F7FAFF; }
 html, body, [class*="st-"] { font-family: 'Source Sans 3', 'Noto Serif TC', 'Noto Serif CJK TC', 'Songti TC', sans-serif; }
+[data-testid="stText"], [data-testid="stCode"], pre, code { font-family: 'Noto Serif TC', 'Noto Serif CJK TC', 'Songti TC', serif !important; }
 [data-testid="stAppViewContainer"] { background: var(--paper); }
 [data-testid="stHeader"] { background: transparent; }
 .hero { text-align:center; padding: 2.4rem 0 1rem; }
 .hero h1 { color: var(--ink); font-size: clamp(3.1rem, 6vw, 5rem); letter-spacing: .04em; margin: 0; }
 .hero .subtitle { color: #526476; font-size: 1.22rem; margin-top: .4rem; }
-.hero-rule { width: 92px; height: 3px; background: var(--gold); margin: 1.2rem auto 1.6rem; }
+.hero-rule { width: 92px; height: 3px; background: var(--electric); margin: 1.2rem auto 1.6rem; }
 .source-jump { text-align: center; margin: 0 0 1rem; }
 .source-jump a { color: var(--ink); text-decoration-color: var(--gold); text-underline-offset: 4px; font-weight: 600; }
+[data-testid="stExpander"] summary svg { display: none !important; }
+[data-testid="stExpander"] summary::before { content: '›'; color: var(--electric); font: 1.55rem/1 'Source Sans 3', sans-serif; margin-right: .55rem; }
+[data-testid="stExpander"] details[open] summary::before { content: '⌄'; }
+[data-testid="stExpander"] { border-color: #B8CCEB; }
 [data-testid="stSidebar"] { background: #F0EEE7; }
 </style>
 <div class="hero"><h1>TransMuTe</h1><div class="hero-rule"></div><div class="subtitle">Chinese Translation of Music Theory Terminology</div></div>
@@ -96,7 +101,7 @@ if mode.startswith("Zoom in"):
     st.subheader(f"{len(found)} matching attestations")
     if not found: st.info("No matches. Try another spelling or clear a filter.")
     for a,src,concept in found:
-        with st.container(border=True):
+        with st.expander(f"{a.get('term_form_as_seen','')} · {source_label(a.get('source_id',''))} · {a.get('source_locator_verbatim','')}"):
             c1,c2=st.columns([1,2])
             with c1:
                 st.markdown(f"**Concept:** {concept_label(concept) or 'Unlinked'}")
@@ -133,7 +138,7 @@ else:
             linked.append((a,src))
         st.caption(f"{len(linked)} linked attestations across the selected witnesses")
         for a,src in linked:
-            with st.container(border=True):
+            with st.expander(f"{a.get('term_form_as_seen','')} · {source_label(a.get('source_id',''))} · {a.get('source_locator_verbatim','')}"):
                 st.markdown("**Source context**")
                 st.text(a.get("context_passage_verbatim", ""))
                 if a.get("definition_or_explanation_verbatim"):

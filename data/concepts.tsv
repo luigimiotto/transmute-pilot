@@ -1,20 +1,20 @@
-﻿concept_id	preferred_label_en	modern_zh_label	scope_note	status	notes
-C0001	clef	譜號	General concept of a clef: a sign identifying pitch positions on a staff.	candidate	Parent concept; specific clef types use their own concept IDs.
-C0002	treble clef	高音譜號	Treble clef; linked in this pilot to 剛啟發 in the confirmed Essentials passage.	candidate	
-C0003	alto clef	中音譜號	Alto clef; historical mappings remain to be established from evidence.	candidate	
-C0004	bass clef	低音譜號	Bass clef; historical mappings remain to be established from evidence.	candidate	
-C0005	pitch		Pitch; distinguish from tone, note, and sound by source usage.	candidate	
-C0006	whole tone		Whole tone; preserve source-specific interval distinctions.	candidate	
-C0007	semitone		Semitone; preserve source-specific interval distinctions.	candidate	
-C0008	consonance		Consonance; specify source meaning when linking attestations.	candidate	
-C0009	dissonance		Dissonance; specify source meaning when linking attestations.	candidate	
-C0010	note		Note; clarify whether the source means sign, sound, or unit.	candidate	
-C0011	rest		Rest; clarify whether source means sign or silence/duration.	candidate	
-C0012	time signature		Time signature; verify source-specific notational meaning.	candidate	
-C0013	octave		Octave; preserve interval/register distinctions.	candidate	
-C0014	voice type		Voice type; use more specific concepts where supported.	candidate	
-C0015	soprano	女高音	Soprano voice/part.	candidate	
-C0016	alto	女低音	Alto voice/part; distinguish from alto clef.	candidate	
-C0017	tenor	男高音	Tenor voice/part.	candidate	
-C0018	bass	男低音	Bass voice/part; distinguish from bass clef.	candidate	
-C0019	transposition		Transposition; verify source-specific meaning.	candidate	
+"concept_id"	"preferred_label_en"	"modern_zh_label"	"scope_note"	"status"	"notes"
+"C0001"	"clef"	"譜號"	"General concept of a clef: a sign identifying pitch positions on a staff."	"candidate"	"Parent concept; specific clef types use their own concept IDs."
+"C0002"	"treble clef"	"高音譜號"	"Treble clef; linked in this pilot to 剛啟發 in the confirmed Essentials passage."	"candidate"	""
+"C0003"	"alto clef"	"中音譜號"	"Alto clef; historical mappings remain to be established from evidence."	"candidate"	""
+"C0004"	"bass clef"	"低音譜號"	"Bass clef; historical mappings remain to be established from evidence."	"candidate"	""
+"C0005"	"pitch"	"音高"	"Pitch; distinguish from tone, note, and sound by source usage."	"candidate"	""
+"C0006"	"whole tone"	"全音"	"Whole tone; preserve source-specific interval distinctions."	"candidate"	""
+"C0007"	"semitone"	"半音"	"Semitone; preserve source-specific interval distinctions."	"candidate"	""
+"C0008"	"consonance"	"协和"	"Consonance; specify source meaning when linking attestations."	"candidate"	""
+"C0009"	"dissonance"	"不协和"	"Dissonance; specify source meaning when linking attestations."	"candidate"	""
+"C0010"	"note"	"音符"	"Note; clarify whether the source means sign, sound, or unit."	"candidate"	""
+"C0011"	"rest"	"休止符"	"Rest; clarify whether source means sign or silence/duration."	"candidate"	""
+"C0012"	"time signature"	"拍号"	"Time signature; verify source-specific notational meaning."	"candidate"	""
+"C0013"	"octave"	"八度"	"Octave; preserve interval/register distinctions."	"candidate"	""
+"C0014"	"voice type"	"声部类型"	"Voice type; use more specific concepts where supported."	"candidate"	""
+"C0015"	"soprano"	"女高音"	"Soprano voice/part."	"candidate"	""
+"C0016"	"alto"	"女低音"	"Alto voice/part; distinguish from alto clef."	"candidate"	""
+"C0017"	"tenor"	"男高音"	"Tenor voice/part."	"candidate"	""
+"C0018"	"bass"	"男低音"	"Bass voice/part; distinguish from bass clef."	"candidate"	""
+"C0019"	"transposition"	"移调"	"Transposition; verify source-specific meaning."	"candidate"	""
