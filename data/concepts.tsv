@@ -13,8 +13,8 @@ C0011	rest		Rest; clarify whether source means sign or silence/duration.	candida
 C0012	time signature		Time signature; verify source-specific notational meaning.	candidate	
 C0013	octave		Octave; preserve interval/register distinctions.	candidate	
 C0014	voice type		Voice type; use more specific concepts where supported.	candidate	
-C0015	soprano		Soprano voice/part.	candidate	
-C0016	alto		Alto voice/part; distinguish from alto clef.	candidate	
-C0017	tenor		Tenor voice/part.	candidate	
-C0018	bass		Bass voice/part; distinguish from bass clef.	candidate	
+C0015	soprano	女高音	Soprano voice/part.	candidate	
+C0016	alto	女低音	Alto voice/part; distinguish from alto clef.	candidate	
+C0017	tenor	男高音	Tenor voice/part.	candidate	
+C0018	bass	男低音	Bass voice/part; distinguish from bass clef.	candidate	
 C0019	transposition		Transposition; verify source-specific meaning.	candidate	
