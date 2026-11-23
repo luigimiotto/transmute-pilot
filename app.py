@@ -35,7 +35,7 @@ for x in interpretations: interp_by_att.setdefault(x["attestation_id"], []).appe
 
 with st.sidebar:
     st.header("Narrow the corpus")
-    source_options = sorted({r["short_title"] for r in sources if r.get("source_short_title")})
+    source_options = sorted({r["short_title"] for r in sources if r.get("short_title")})
     chosen_sources = st.multiselect("Source", source_options, default=source_options)
     concept_options = sorted({r["preferred_label_en"] for r in concepts if r.get("preferred_label_en")})
     chosen_concepts = st.multiselect("Concept", concept_options)
@@ -61,7 +61,11 @@ if mode == "Search attestations":
         concept=concept_by_id.get(a.get("concept_id", ""), {})
         if chosen_sources and src.get("short_title") not in chosen_sources: continue
         if chosen_concepts and concept.get("preferred_label_en") not in chosen_concepts: continue
-        if matches(ix, query) or (query and query.casefold() in " ".join(a.values()).casefold()): found.append((a,src,concept))
+        concept_text = " ".join(str(v or "") for v in concept.values())
+        source_text = " ".join(str(v or "") for v in src.values())
+        linked_text_match = bool(query) and query.casefold() in (concept_text + " " + source_text).casefold()
+        if matches(ix, query) or (query and query.casefold() in " ".join(a.values()).casefold()) or linked_text_match:
+            found.append((a,src,concept))
     st.subheader(f"{len(found)} matching attestations")
     if not found: st.info("No matches. Try a shorter form, another spelling, or clear a filter.")
     for a,src,concept in found:
