@@ -23,9 +23,10 @@ st.set_page_config(page_title="TransMuTe | Pilot Database", page_icon="🎼", la
 st.markdown("""
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap');
-:root { --ink: #102B4E; --gold: #D6A833; --electric: #1769FF; --paper: #F7FAFF; }
+:root { --ink: #18324A; --gold: #C39A43; --electric: #1769FF; --paper: #FBF9F4; }
 html, body, [class*="st-"] { font-family: 'Source Sans 3', 'Noto Serif TC', 'Noto Serif CJK TC', 'Songti TC', sans-serif; }
 [data-testid="stText"], [data-testid="stCode"], pre, code { font-family: 'Noto Serif TC', 'Noto Serif CJK TC', 'Songti TC', serif !important; }
+.source-cjk { font-family: 'Noto Serif TC', 'Noto Serif CJK TC', 'Songti TC', serif; white-space: pre-wrap; overflow-wrap: anywhere; }
 [data-testid="stAppViewContainer"] { background: var(--paper); }
 [data-testid="stHeader"] { background: transparent; }
 .hero { text-align:center; padding: 2.4rem 0 1rem; }
@@ -35,6 +36,7 @@ html, body, [class*="st-"] { font-family: 'Source Sans 3', 'Noto Serif TC', 'Not
 .source-jump { text-align: center; margin: 0 0 1rem; }
 .source-jump a { color: var(--ink); text-decoration-color: var(--gold); text-underline-offset: 4px; font-weight: 600; }
 [data-testid="stExpander"] summary svg { display: none !important; }
+[data-testid="stExpander"] summary span[data-testid="stIconMaterial"] { display: none !important; }
 [data-testid="stExpander"] summary::before { content: '›'; color: var(--electric); font: 1.55rem/1 'Source Sans 3', sans-serif; margin-right: .55rem; }
 [data-testid="stExpander"] details[open] summary::before { content: '⌄'; }
 [data-testid="stExpander"] { border-color: #B8CCEB; }
@@ -112,10 +114,10 @@ if mode.startswith("Zoom in"):
                 st.markdown("**Source form**")
                 st.write(a.get("term_form_as_seen", ""))
                 st.markdown("**Context (transcribed)**")
-                st.text(a.get("context_passage_verbatim", ""))
+                st.markdown(f"<div class='source-cjk'>{a.get('context_passage_verbatim', '')}</div>", unsafe_allow_html=True)
                 if a.get("definition_or_explanation_verbatim"):
                     st.markdown("**Definition / explanation**")
-                    st.text(a["definition_or_explanation_verbatim"])
+                    st.markdown(f"<div class='source-cjk'>{a['definition_or_explanation_verbatim']}</div>", unsafe_allow_html=True)
             ls=layers_by_att.get(a.get("attestation_id",""),[])
             if ls:
                 st.markdown("**Editorial layers**")
@@ -155,8 +157,7 @@ source_columns = st.columns(3)
 for index, source in enumerate(sources):
     sid = source.get("source_id", "")
     with source_columns[index % len(source_columns)]:
-        with st.container(border=True):
-            st.markdown(f"**{source_label(sid)}**")
+        with st.expander(source_label(sid)):
             st.write(source.get("bibliographic_citation", ""))
             witness = next((x for x in witnesses if x.get("source_id") == sid), None)
             if witness:
@@ -164,12 +165,10 @@ for index, source in enumerate(sources):
 
 about_col, scope_col = st.columns(2)
 with about_col:
-    with st.container(border=True):
-        st.subheader("About the project")
+    with st.expander("About the project"):
         st.markdown("""Terminology is often (mis)understood merely as the “study of vocabulary in specialized fields” (Alleton 2001, 15). Taking music theory as an example, this project examines terms through the lens of translation history. Rather than treating them as static containers or transfer-oriented vessels, it approaches them as dynamic interfaces: historical traces that carry specific concepts and reveal broader processes of transculturation.""")
         st.markdown("""**TransMuTe** plays on *transmute*: it evokes the “translingual practice” described by Liu (1995), through which musical terms are reshaped in new linguistic and cultural settings. Its capital letters point to the **Trans**lation of **Mu**sic **Te**rminology and to **Trans**culturation. The name also suggests going *trans-*—beyond the silent archival page—to unmute the transcultural resonances carried by translation.""")
 with scope_col:
-    with st.container(border=True):
-        st.subheader("Scope and caveats")
+    with st.expander("Scope and caveats"):
         st.markdown("""This pilot samples three sources: the early Qing 律呂纂要 (ca. 1690), 律呂正義續編 (1713), and the later Qing 西國樂法啓蒙 (1872). It is a selective qualitative sample, not a comprehensive inventory or a continuous history of Chinese music terminology. Uneven source coverage is intentional at this stage. Search results identify textual matches; they do not by themselves establish conceptual equivalence. Source forms, editorial layers, and interpretations are kept distinct, and interpretive claims should be read with their evidence and confidence in view. The project begins in the late seventeenth century as a sampling decision, not as a claim that earlier musical exchanges did not occur.""")
 st.caption("Source wording, editorial layers, and analytical interpretations are displayed separately. This is a pilot database; verify citations and transcriptions against the cited witnesses.")
