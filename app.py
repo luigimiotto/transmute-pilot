@@ -23,7 +23,7 @@ st.set_page_config(page_title="TransMuTe | Pilot Database", page_icon="🎼", la
 st.markdown("""
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap');
-:root { --ink: #18324A; --gold: #C39A43; --electric: #1769FF; --paper: #FBF9F4; }
+:root { --ink: #292521; --gold: #C39A43; --electric: #7B3F61; --paper: #FBF9F5; }
 html, body, [class*="st-"] { font-family: 'Source Sans 3', 'Noto Serif TC', 'Noto Serif CJK TC', 'Songti TC', sans-serif; }
 [data-testid="stText"], [data-testid="stCode"], pre, code { font-family: 'Noto Serif TC', 'Noto Serif CJK TC', 'Songti TC', serif !important; }
 .source-cjk { font-family: 'Noto Serif TC', 'Noto Serif CJK TC', 'Songti TC', serif; white-space: pre-wrap; overflow-wrap: anywhere; }
