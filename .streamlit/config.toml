@@ -4,6 +4,6 @@ primaryColor = "#B18A37"
 backgroundColor = "#FBF9F4"
 secondaryBackgroundColor = "#F0EEE7"
 textColor = "#18324A"
-font = "serif"
+font = "sans serif"
 baseFontSize = 17
 headingFontSizes = [44, 34, 28, 23, 20, 18]
