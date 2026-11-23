@@ -1,0 +1,4 @@
+﻿witness_id	source_id	witness_description	repository_or_shelfmark	digital_copy_url_or_filename	pagination_system	notes
+WI001	SO001	GGZB 2000 reproduction, vol. 24	Gugong zhenben congkan 故宮珍本叢刊, 24	Printed reproduction, pp. 339–379	GGZB printed pagination; note upper/lower reproduction in locator	Record printed page and chapter if available; original folio not supplied.
+WI002	SO002	1985 Chizaotang Siku quanshu huiyao copy; CText digital reproduction	Shijie shuju 世界書局, 1985	https://ctext.org/library.pl?if=gb&res=6621	Printed volume/page as shown in digital reproduction	Researcher confirms this is LLZYXB.
+WI003	SO003	1872 edition copy consulted	Bodleian Library, University of Oxford, Sinica 1809	Add stable scan URL if available	Printed pagination	Use 1872 edition only.
