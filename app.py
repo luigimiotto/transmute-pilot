@@ -22,7 +22,7 @@ search_index = read_table("search_index")
 st.set_page_config(page_title="TransMuTe | Pilot Database", page_icon="🎼", layout="wide")
 st.markdown("""
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Serif+TC:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap');
 :root { --ink: #18324A; --gold: #C39A43; --electric: #3478C8; --paper: #F4F8FD; }
 html, body, [class*="st-"] { font-family: 'Noto Serif TC', 'Noto Serif CJK TC', 'Source Serif 4', 'Songti TC', serif; }
 [data-testid="stText"], [data-testid="stCode"], pre, code { font-family: 'Noto Serif TC', 'Noto Serif CJK TC', 'Songti TC', serif !important; }
@@ -30,6 +30,7 @@ html, body, [class*="st-"] { font-family: 'Noto Serif TC', 'Noto Serif CJK TC', 
 [data-testid="stAppViewContainer"] { background: var(--paper); }
 [data-testid="stHeader"] { background: transparent; }
 .hero { text-align:center; padding: 2.4rem 0 1rem; }
+.hero-mark { color: var(--electric); font-family: 'Ma Shan Zheng', 'Noto Serif TC', serif; font-size: 3rem; line-height: 1; margin-bottom: .55rem; }
 .hero h1 { color: var(--ink); font-size: clamp(3.1rem, 6vw, 5rem); letter-spacing: .04em; margin: 0; }
 .hero .subtitle { color: #526476; font-size: 1.22rem; margin-top: .4rem; }
 .hero-rule { width: 92px; height: 3px; background: var(--electric); margin: 1.2rem auto 1.6rem; }
@@ -42,7 +43,7 @@ html, body, [class*="st-"] { font-family: 'Noto Serif TC', 'Noto Serif CJK TC', 
 [data-testid="stExpander"] { border-color: #B8CCEB; }
 [data-testid="stSidebar"] { background: #F0EEE7; }
 </style>
-<div class="hero"><h1>TransMuTe</h1><div class="hero-rule"></div><div class="subtitle">Chinese Translation of Music Theory Terminology</div></div>
+<div class="hero"><div class="hero-mark">貝</div><h1>TransMuTe</h1><div class="hero-rule"></div><div class="subtitle">Chinese Translation of Music Theory Terminology</div></div>
 """, unsafe_allow_html=True)
 st.markdown('<p class="source-jump"><a href="#pilot-sources">Explore the pilot sources ↓</a></p>', unsafe_allow_html=True)
 st.markdown("Search historical forms or concepts in English, Chinese, Pinyin, or passage text. Move from an individual attestation to comparison across sources.")
@@ -77,7 +78,6 @@ with st.sidebar:
     label_to_concept = {concept_label(c): c for c in concepts if c.get("preferred_label_en")}
     selected_concept_labels = st.multiselect("Concept", list(label_to_concept))
     st.divider()
-    st.caption(f"{len(attestations)} attestations · {len(concepts)} concepts")
 
 query = st.text_input("Search the corpus", placeholder="Try 品, 啟發, 譜號, pǐn, clef, soprano…")
 mode = st.radio("Explore", ["Zoom in · Search attestations", "Zoom out · Compare a concept"], horizontal=True)
