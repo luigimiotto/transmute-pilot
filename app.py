@@ -24,7 +24,7 @@ st.markdown("""
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap');
 :root { --ink: #18324A; --gold: #C39A43; --electric: #3478C8; --paper: #F4F8FD; }
-html, body, [class*="st-"] { font-family: 'Source Sans 3', 'Noto Serif TC', 'Noto Serif CJK TC', 'Songti TC', sans-serif; }
+html, body, [class*="st-"] { font-family: 'Noto Serif TC', 'Noto Serif CJK TC', 'Source Serif 4', 'Songti TC', serif; }
 [data-testid="stText"], [data-testid="stCode"], pre, code { font-family: 'Noto Serif TC', 'Noto Serif CJK TC', 'Songti TC', serif !important; }
 .source-cjk { font-family: 'Noto Serif TC', 'Noto Serif CJK TC', 'Songti TC', serif; white-space: pre-wrap; overflow-wrap: anywhere; }
 [data-testid="stAppViewContainer"] { background: var(--paper); }
@@ -45,7 +45,7 @@ html, body, [class*="st-"] { font-family: 'Source Sans 3', 'Noto Serif TC', 'Not
 <div class="hero"><h1>TransMuTe</h1><div class="hero-rule"></div><div class="subtitle">Chinese Translation of Music Theory Terminology</div></div>
 """, unsafe_allow_html=True)
 st.markdown('<p class="source-jump"><a href="#pilot-sources">Explore the pilot sources ↓</a></p>', unsafe_allow_html=True)
-st.markdown("Search historical forms, English concepts, modern Chinese equivalents, Pinyin, or passage text. Move from an individual attestation to comparison across sources.")
+st.markdown("Search historical forms or concepts in English, Chinese, Pinyin, or passage text. Move from an individual attestation to comparison across sources.")
 
 concept_by_id = {r["concept_id"]: r for r in concepts}
 source_by_id = {r["source_id"]: r for r in sources}
