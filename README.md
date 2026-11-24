@@ -48,3 +48,9 @@ Full bibliographic information and witness notes are recorded in `data/sources.t
 
 TransMuTe is a work in progress and the empirical engine of a doctoral dissertation. Feedback on the sampling, terminology, data structure, search experience, and interpretation is welcome. Interpretive notes are provisional where marked as such and may change as the project develops.
 
+## License and reuse
+
+The application code in this repository is licensed under the MIT License; see [LICENSE](LICENSE). You may fork and modify the software under those terms, including retaining the copyright and license notices.
+
+The MIT License applies to the software code only. It does not automatically license the contents of the `data/` directory, historical source texts, transcriptions, or materials held by libraries. No separate reuse license for the dataset is assigned here. Please consult the relevant source and rights holder before reusing those materials, and contact the project author with questions.
+
