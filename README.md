@@ -54,5 +54,5 @@ The application code in this repository is licensed under the MIT License; see [
 
 The project dataset deposited on Zenodo is licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/). The same license applies to the corresponding creator-owned dataset files in this repository. Reusers must credit the creator, link to the license, and indicate changes. This license does not cover third-party historical source texts, scans, or library materials unless explicitly stated.
 
-**Suggested project citation:** Miotto, Luigi. *TransMuTe: Chinese Translation of Music Theory Terminology* [dataset and software]. Cite the specific Zenodo version or GitHub release used; include its DOI or URL and access date. For historical evidence, also cite the primary work, consulted witness, and printed locator recorded in the relevant attestation.
+**Suggested project citation:** Miotto, Luigi. *TransMuTe: Chinese Translation of Music Theory Terminology* [dataset and software]. Zenodo. [https://doi.org/10.5281/zenodo.24508796](https://doi.org/10.5281/zenodo.24508796). Cite the specific version used. For historical evidence, also cite the primary work, consulted witness, and printed locator recorded in the relevant attestation.
 
