@@ -50,7 +50,9 @@ TransMuTe is a work in progress and the empirical engine of a doctoral dissertat
 
 ## License and reuse
 
-The application code in this repository is licensed under the MIT License; see [LICENSE](LICENSE). You may fork and modify the software under those terms, including retaining the copyright and license notices.
+The application code in this repository is licensed under the MIT License; see [LICENSE](LICENSE). You may fork, modify, and redistribute the software, including commercially, provided you retain the copyright and license notices.
 
-The MIT License applies to the software code only. It does not automatically license the contents of the `data/` directory, historical source texts, transcriptions, or materials held by libraries. No separate reuse license for the dataset is assigned here. Please consult the relevant source and rights holder before reusing those materials, and contact the project author with questions.
+The project dataset deposited on Zenodo is licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/). The same license applies to the corresponding creator-owned dataset files in this repository. Reusers must credit the creator, link to the license, and indicate changes. This license does not cover third-party historical source texts, scans, or library materials unless explicitly stated.
+
+**Suggested project citation:** Miotto, Luigi. *TransMuTe: Chinese Translation of Music Theory Terminology* [dataset and software]. Cite the specific Zenodo version or GitHub release used; include its DOI or URL and access date. For historical evidence, also cite the primary work, consulted witness, and printed locator recorded in the relevant attestation.
 
