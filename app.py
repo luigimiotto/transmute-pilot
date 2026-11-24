@@ -41,6 +41,7 @@ html, body, [class*="st-"] { font-family: 'Noto Serif TC', 'Noto Serif CJK TC', 
 [data-testid="stExpander"] summary::before { content: '›'; color: var(--electric); font: 1.55rem/1 'Source Sans 3', sans-serif; margin-right: .55rem; }
 [data-testid="stExpander"] details[open] summary::before { content: '⌄'; }
 [data-testid="stExpander"] { border-color: #B8CCEB; }
+[data-testid="collapsedControl"], [data-testid="stSidebarCollapsedControl"] { display: none !important; }
 [data-testid="stSidebar"] { background: #F0EEE7; }
 </style>
 <div class="hero"><div class="hero-mark">譯變</div><h1>TransMuTe</h1><div class="hero-rule"></div><div class="subtitle">Chinese Translation of Music Theory Terminology</div></div>
@@ -71,8 +72,7 @@ def concept_label(concept):
     zh = concept.get("modern_zh_label", "")
     return f"{en} · {zh}" if zh else en
 
-with st.sidebar:
-    st.header("Narrow the corpus")
+with st.expander("Filter the corpus", expanded=False):
     source_options = [source_label(s["source_id"]) for s in sources if s.get("source_id")]
     selected_source_labels = st.multiselect("Source", source_options, default=source_options)
     label_to_concept = {concept_label(c): c for c in concepts if c.get("preferred_label_en")}
