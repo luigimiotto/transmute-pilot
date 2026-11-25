@@ -32,7 +32,7 @@ html, body, [class*="st-"] { font-family: 'Noto Serif TC', 'Noto Serif CJK TC', 
 .hero { text-align:center; padding: 2.4rem 0 1rem; }
 .hero-mark { color: var(--ink); font-family: 'Noto Serif TC', 'Songti TC', serif; font-size: 3.35rem; letter-spacing: .12em; line-height: 1.2; margin-bottom: .55rem; }
 .brand-accent { color: var(--burgundy); }
-.hero h1 { color: var(--ink); font-size: clamp(3.1rem, 6vw, 5rem); letter-spacing: .04em; margin: 0; }
+.hero h1 { color: var(--ink); font-size: clamp(2rem, 7vw, 5rem); letter-spacing: .04em; white-space: nowrap; margin: 0; }
 .hero .subtitle { color: var(--muted); font-size: 1.22rem; margin-top: .4rem; }
 .hero-rule { width: 92px; height: 3px; background: var(--burgundy); margin: 1.2rem auto 1.6rem; }
 h1, h2, h3, h4, h5, h6 { color: var(--ink); }
