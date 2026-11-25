@@ -1,9 +1,9 @@
 [theme]
 base = "light"
-primaryColor = "#3478C8"
-backgroundColor = "#F4F8FD"
-secondaryBackgroundColor = "#E7EFF9"
-textColor = "#18324A"
+primaryColor = "#8B354A"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F3F5F7"
+textColor = "#243746"
 font = "serif"
 baseFontSize = 17
 headingFontSizes = [40, 32, 26, 22, 19, 17]

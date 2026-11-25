@@ -23,28 +23,32 @@ st.set_page_config(page_title="TransMuTe | Pilot Database", page_icon="🎼", la
 st.markdown("""
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Serif+TC:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap');
-:root { --ink: #18324A; --gold: #C39A43; --electric: #3478C8; --paper: #F4F8FD; }
+:root { --ink: #243746; --burgundy: #8B354A; --paper: #FFFFFF; --muted: #526476; --border: #D7DEE3; }
 html, body, [class*="st-"] { font-family: 'Noto Serif TC', 'Noto Serif CJK TC', 'Source Serif 4', 'Songti TC', serif; }
 [data-testid="stText"], [data-testid="stCode"], pre, code { font-family: 'Noto Serif TC', 'Noto Serif CJK TC', 'Songti TC', serif !important; }
 .source-cjk { font-family: 'Noto Serif TC', 'Noto Serif CJK TC', 'Songti TC', serif; white-space: pre-wrap; overflow-wrap: anywhere; }
 [data-testid="stAppViewContainer"] { background: var(--paper); }
 [data-testid="stHeader"] { background: transparent; }
 .hero { text-align:center; padding: 2.4rem 0 1rem; }
-.hero-mark { color: #111111; font-family: 'Ma Shan Zheng', 'Noto Serif TC', serif; font-size: 3.35rem; letter-spacing: .12em; line-height: 1; margin-bottom: .55rem; }
+.hero-mark { color: var(--ink); font-family: 'Noto Serif TC', 'Songti TC', serif; font-size: 3.35rem; letter-spacing: .12em; line-height: 1.2; margin-bottom: .55rem; }
+.brand-accent { color: var(--burgundy); }
 .hero h1 { color: var(--ink); font-size: clamp(3.1rem, 6vw, 5rem); letter-spacing: .04em; margin: 0; }
-.hero .subtitle { color: #526476; font-size: 1.22rem; margin-top: .4rem; }
-.hero-rule { width: 92px; height: 3px; background: var(--electric); margin: 1.2rem auto 1.6rem; }
+.hero .subtitle { color: var(--muted); font-size: 1.22rem; margin-top: .4rem; }
+.hero-rule { width: 92px; height: 3px; background: var(--burgundy); margin: 1.2rem auto 1.6rem; }
+h1, h2, h3, h4, h5, h6 { color: var(--ink); }
+a { color: var(--burgundy); text-underline-offset: 4px; }
 .source-jump { text-align: center; margin: 0 0 1rem; }
-.source-jump a { color: var(--ink); text-decoration-color: var(--gold); text-underline-offset: 4px; font-weight: 600; }
+.source-jump a { color: var(--burgundy); text-decoration-color: var(--burgundy); text-underline-offset: 4px; font-weight: 600; }
 [data-testid="stExpander"] summary svg { display: none !important; }
 [data-testid="stExpander"] summary span[data-testid="stIconMaterial"] { display: none !important; }
-[data-testid="stExpander"] summary::before { content: '›'; color: var(--electric); font: 1.55rem/1 'Source Sans 3', sans-serif; margin-right: .55rem; }
+[data-testid="stExpander"] summary::before { content: '›'; color: var(--burgundy); font: 1.55rem/1 'Source Sans 3', sans-serif; margin-right: .55rem; }
 [data-testid="stExpander"] details[open] summary::before { content: '⌄'; }
-[data-testid="stExpander"] { border-color: #B8CCEB; }
+[data-testid="stExpander"] { border-color: var(--border); }
 [data-testid="collapsedControl"], [data-testid="stSidebarCollapsedControl"] { display: none !important; }
-[data-testid="stSidebar"] { background: #F0EEE7; }
+[data-testid="stSidebar"] { background: #F3F5F7; }
+.site-footer { color: var(--muted); text-align: center; margin-top: 2rem; padding: 1rem 0; border-top: 1px solid var(--border); }
 </style>
-<div class="hero"><div class="hero-mark">譯變</div><h1>TransMuTe</h1><div class="hero-rule"></div><div class="subtitle">Chinese Translation of Music Theory Terminology</div></div>
+<div class="hero"><div class="hero-mark"><span class="brand-accent">譯</span>變</div><h1>Trans<span class="brand-accent">Mu</span>Te</h1><div class="hero-rule"></div><div class="subtitle">Chinese Translation of Music Theory Terminology</div></div>
 """, unsafe_allow_html=True)
 st.markdown('<p class="source-jump"><a href="#pilot-sources">Explore the pilot sources ↓</a></p>', unsafe_allow_html=True)
 st.markdown("Search historical forms or concepts in English, Chinese, Pinyin, or passage text. Move from an individual attestation to comparison across sources.")
