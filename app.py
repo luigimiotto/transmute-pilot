@@ -30,8 +30,10 @@ html, body, [class*="st-"] { font-family: 'Noto Serif TC', 'Noto Serif CJK TC', 
 [data-testid="stAppViewContainer"] { background: var(--paper); }
 [data-testid="stHeader"] { background: transparent; }
 .hero { text-align:center; padding: 2.4rem 0 1rem; }
-.hero-mark { color: #111111; font-family: 'Ma Shan Zheng', 'Noto Serif TC', serif; font-size: 3.35rem; letter-spacing: .12em; line-height: 1; margin-bottom: .55rem; }
-.hero h1 { color: var(--ink); font-size: clamp(3.1rem, 6vw, 5rem); letter-spacing: .04em; margin: 0; }
+.hero-mark { color: #343A40; font-family: 'Ma Shan Zheng', 'Noto Serif TC', serif; font-size: 3.35rem; letter-spacing: .12em; line-height: 1; margin-bottom: .55rem; }
+.hero h1 { color: #343A40; font-size: clamp(3.1rem, 6vw, 5rem); letter-spacing: .04em; margin: 0; }
+.hero .brand-translation { color: #355C9A; }
+[data-testid="stHeading"] h1, [data-testid="stHeading"] h2, [data-testid="stHeading"] h3, [data-testid="stHeading"] h4 { color: #343A40; }
 .hero .subtitle { color: #526476; font-size: 1.22rem; margin-top: .4rem; }
 .hero-rule { width: 92px; height: 3px; background: var(--electric); margin: 1.2rem auto 1.6rem; }
 .source-jump { text-align: center; margin: 0 0 1rem; }
@@ -44,7 +46,7 @@ html, body, [class*="st-"] { font-family: 'Noto Serif TC', 'Noto Serif CJK TC', 
 [data-testid="collapsedControl"], [data-testid="stSidebarCollapsedControl"] { display: none !important; }
 [data-testid="stSidebar"] { background: #F0EEE7; }
 </style>
-<div class="hero"><div class="hero-mark">譯變</div><h1>TransMuTe</h1><div class="hero-rule"></div><div class="subtitle">Chinese Translation of Music Theory Terminology</div></div>
+<div class="hero"><div class="hero-mark"><span class="brand-translation">譯</span>變</div><h1><span class="brand-translation">Trans</span>MuTe</h1><div class="hero-rule"></div><div class="subtitle">Chinese Translation of Music Theory Terminology</div></div>
 """, unsafe_allow_html=True)
 st.markdown('<p class="source-jump"><a href="#pilot-sources">Explore the pilot sources ↓</a></p>', unsafe_allow_html=True)
 st.markdown("Search historical forms or concepts in English, Chinese, Pinyin, or passage text. Move from an individual attestation to comparison across sources.")
