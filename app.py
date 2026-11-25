@@ -100,7 +100,10 @@ if mode.startswith("Zoom in"):
         searchable = haystack(list(ix.values()) + list(a.values()) + list(concept.values()) + list(src.values()))
         if not q or q in searchable:
             found.append((a, src, concept))
-    st.subheader(f"{len(found)} matching attestations")
+    if q:
+        st.subheader(f"{len(found)} matching attestations")
+    else:
+        st.subheader("Browse the pilot corpus")
     if not found: st.info("No matches. Try another spelling or clear a filter.")
     for a,src,concept in found:
         with st.expander(f"{a.get('term_form_as_seen','')} · {source_label(a.get('source_id',''))} · {a.get('source_locator_verbatim','')}"):
