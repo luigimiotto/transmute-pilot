@@ -2,6 +2,7 @@ import csv
 from pathlib import Path
 import streamlit as st
 from data_model import ConceptModel
+from record_view import render_record
 
 BASE = Path(__file__).parent / "data"
 
@@ -47,6 +48,22 @@ html, body, [class*="st-"] { font-family: 'Noto Serif TC', 'Noto Serif CJK TC', 
 [data-testid="stExpander"] { border-color: #B8CCEB; }
 [data-testid="collapsedControl"], [data-testid="stSidebarCollapsedControl"] { display: none !important; }
 [data-testid="stSidebar"] { background: #F0EEE7; }
+.record-layers { color: #243746; }
+.record-level { padding: 1.15rem 1.3rem; margin: .8rem 0 1.1rem; border-left: 4px solid; border-radius: 5px; }
+.record-level-1 { background: #EFF4FC; border-color: #355C9A; }
+.record-level-2 { background: #EDF5F1; border-color: #39756F; }
+.record-level-3 { background: #F3EFF6; border-color: #725A80; }
+.record-level h4 { font-size: 1.2rem; margin: 0 0 .2rem; padding: 0; }
+.record-level-1 h4 { color: #355C9A; }
+.record-level-2 h4 { color: #39756F; }
+.record-level-3 h4 { color: #725A80; }
+.record-level-description, .record-note { color: #526476; font-size: .94rem; margin: .25rem 0 .8rem; }
+.record-field { display: grid; grid-template-columns: minmax(130px, 1fr) 4fr; gap: .35rem 1rem; padding: .35rem 0; }
+.record-field > div, .record-analysis { white-space: pre-wrap; overflow-wrap: anywhere; min-width: 0; }
+.record-claim h5 { color: #725A80; font-size: 1.1rem; margin: .8rem 0 .3rem; padding: 0; }
+.record-claim + .record-claim { border-top: 1px solid #D6CADF; margin-top: 1rem; padding-top: .5rem; }
+.record-analysis { margin: .6rem 0; }
+@media(max-width:600px) { .record-level { padding: .9rem; } .record-field { grid-template-columns: 1fr; margin-bottom: .6rem; } }
 </style>
 <div class="hero"><div class="hero-mark"><span class="brand-translation">譯</span>變</div><h1><span class="brand-translation">Trans</span><span class="brand-music">Mu</span>Te</h1><div class="hero-rule"></div><div class="subtitle">Chinese Translation of Music Theory Terminology</div></div>
 """, unsafe_allow_html=True)
@@ -81,17 +98,13 @@ def assigned_labels(attestation):
     return [concept_label(concept_by_id[cid])
             for cid in sorted(model.concept_ids(attestation['attestation_id']))]
 
-def show_interpretation(claim):
-    cid = claim.get('concept_id', '')
-    if cid:
-        st.markdown('**Proposed concept:** ' + concept_label(concept_by_id[cid]))
-        st.caption('Reading: ' + claim.get('mapping_role', 'unspecified') +
-                   ' · Status: ' + (claim.get('epistemic_status') or 'not stated'))
-    st.write(claim.get('analysis_notes', ''))
-    if claim.get('source_notes') and not claim['source_notes'].startswith('[YOU FILL'):
-        st.caption('Evidence / references: ' + claim['source_notes'])
-    if claim.get('confidence'):
-        st.caption('Confidence: ' + claim['confidence'])
+def show_record(a):
+    aid = a['attestation_id']
+    html = render_record(a, source_label(a.get('source_id', '')),
+                         witness_by_id.get(a.get('witness_id', ''), {}),
+                         layers_by_att.get(aid, []), interp_by_att.get(aid, []),
+                         concept_by_id, concept_label)
+    st.markdown(html, unsafe_allow_html=True)
 
 with st.expander("Filter the corpus", expanded=False):
     source_options = [source_label(s["source_id"]) for s in sources if s.get("source_id")]
@@ -129,28 +142,8 @@ if mode.startswith("Zoom in"):
     if not found: st.info("No matches. Try another spelling or clear a filter.")
     for a,src,concept in found:
         with st.expander(f"{a.get('term_form_as_seen','')} · {source_label(a.get('source_id',''))} · {a.get('source_locator_verbatim','')}"):
-            c1,c2=st.columns([1,2])
-            with c1:
-                st.markdown("**Proposed concepts:** " + ('; '.join(assigned_labels(a)) or 'Unlinked'))
-                st.markdown(f"**Source:** {source_label(a.get('source_id',''))}")
-                st.markdown(f"**Witness:** {witness_by_id.get(a.get('witness_id',''),{}).get('witness_description','')}")
-                st.markdown(f"**Record ID:** `{a.get('attestation_id','')}`")
-            with c2:
-                st.markdown("**Source form**")
-                st.write(a.get("term_form_as_seen", ""))
-                st.markdown("**Context (transcribed)**")
-                st.markdown(f"<div class='source-cjk'>{a.get('context_passage_verbatim', '')}</div>", unsafe_allow_html=True)
-                if a.get("definition_or_explanation_verbatim"):
-                    st.markdown("**Definition / explanation**")
-                    st.markdown(f"<div class='source-cjk'>{a['definition_or_explanation_verbatim']}</div>", unsafe_allow_html=True)
-            ls=layers_by_att.get(a.get("attestation_id",""),[])
-            if ls:
-                st.markdown("**Editorial layers**")
-                for layer in ls: st.write(f"{layer.get('layer_type','')}: {layer.get('text_value','')} ({layer.get('source_or_editorial_status','')})")
-            ins=interp_by_att.get(a.get("attestation_id",""),[])
-            if ins:
-                st.markdown("**Interpretation**")
-                for it in ins: show_interpretation(it)
+            show_record(a)
+
 else:
     selected = st.selectbox("Choose a concept", list(label_to_concept)) if label_to_concept else None
     if selected:
@@ -175,14 +168,7 @@ else:
         st.caption(f"{len(linked)} linked attestations across the selected witnesses")
         for a,src in linked:
             with st.expander(f"{a.get('term_form_as_seen','')} · {source_label(a.get('source_id',''))} · {a.get('source_locator_verbatim','')}"):
-                st.markdown("**Source context**")
-                st.text(a.get("context_passage_verbatim", ""))
-                if a.get("definition_or_explanation_verbatim"):
-                    st.markdown("**Definition / explanation**")
-                    st.text(a["definition_or_explanation_verbatim"])
-                for layer in layers_by_att.get(a.get("attestation_id",""),[]): st.write(f"{layer.get('layer_type','')}: {layer.get('text_value','')}")
-                for it in interp_by_att.get(a.get("attestation_id",""),[]):
-                    st.markdown("**Interpretive note**"); show_interpretation(it)
+                show_record(a)
 
 st.divider()
 st.markdown('<div id="pilot-sources"></div>', unsafe_allow_html=True)
