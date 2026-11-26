@@ -1,39 +1,39 @@
-﻿search_record_id	attestation_id	concept_id	source_id	witness_id	term_form	romanization	working_gloss	searchable_context	searchable_definition	search_text	search_scope
-SR0001	AT_C01_1	C0001	SO001	WI001	啟發	qǐfā	departure [point]	啟發者，乃包括，樂音自始至終，高下之形號也。	啟發者，乃包括，樂音自始至終，高下之形號也。	啟發 啟發者，乃包括，樂音自始至終，高下之形號也。 啟發者，乃包括，樂音自始至終，高下之形號也。 qǐfā departure [point]	term_form+context+definition+romanization+gloss
-SR0002	AT_C01_1_2	C0001	SO001	WI001	啓發	qǐfā	departure [point]	又凡奏樂之時，若不預知聲音之高下啓發，則不知繼續高下當作何等矣。	"又凡奏樂之時，若不預知聲音之高下啓發，則不知繼續高下當作何等矣。故因辨聲音高下，更定爲三啓發。樂未奏之先，於三啓發内，用一啓發書於五線之首，俾奏樂
+search_record_id	attestation_id	source_id	witness_id	term_form	romanization	working_gloss	searchable_context	searchable_definition	search_text	search_scope
+SR0001	AT_C01_1	SO001	WI001	啟發	qǐfā	departure [point]	啟發者，乃包括，樂音自始至終，高下之形號也。	啟發者，乃包括，樂音自始至終，高下之形號也。	啟發 啟發者，乃包括，樂音自始至終，高下之形號也。 啟發者，乃包括，樂音自始至終，高下之形號也。 qǐfā departure [point]	term_form+context+definition+romanization+gloss
+SR0002	AT_C01_1_2	SO001	WI001	啓發	qǐfā	departure [point]	又凡奏樂之時，若不預知聲音之高下啓發，則不知繼續高下當作何等矣。	"又凡奏樂之時，若不預知聲音之高下啓發，則不知繼續高下當作何等矣。故因辨聲音高下，更定爲三啓發。樂未奏之先，於三啓發内，用一啓發書於五線之首，俾奏樂
 者如此一樂之首音則樂之究，竟無不明矣。"	"啓發 又凡奏樂之時，若不預知聲音之高下啓發，則不知繼續高下當作何等矣。 又凡奏樂之時，若不預知聲音之高下啓發，則不知繼續高下當作何等矣。故因辨聲音高下，更定爲三啓發。樂未奏之先，於三啓發内，用一啓發書於五線之首，俾奏樂
 者如此一樂之首音則樂之究，竟無不明矣。 qǐfā departure [point]"	term_form+context+definition+romanization+gloss
-SR0003	AT_C01_2	C0001	SO002	WI002	品	pǐn	category, class, level	"⽤上中下三品以明調之等差者，⼤凡作樂必有⾼⾳低⾳平⾳之三等。若不設⼀
+SR0003	AT_C01_2	SO002	WI002	品	pǐn	category, class, level	"⽤上中下三品以明調之等差者，⼤凡作樂必有⾼⾳低⾳平⾳之三等。若不設⼀
 準則，則⾼低無憑。故⽤上中下三品以紀⼀曲之始終為何聲調也。"	"⽤上中下三品以明調之等差者，⼤凡作樂必有⾼⾳低⾳平⾳之三等。若不設⼀
 準則，則⾼低無憑。故⽤上中下三品以紀⼀曲之始終為何聲調也。"	"品 ⽤上中下三品以明調之等差者，⼤凡作樂必有⾼⾳低⾳平⾳之三等。若不設⼀
 準則，則⾼低無憑。故⽤上中下三品以紀⼀曲之始終為何聲調也。 ⽤上中下三品以明調之等差者，⼤凡作樂必有⾼⾳低⾳平⾳之三等。若不設⼀
 準則，則⾼低無憑。故⽤上中下三品以紀⼀曲之始終為何聲調也。 pǐn category, class, level"	term_form+context+definition+romanization+gloss
-SR0004	AT_C01_3	C0001	SO003	WI003	排號	páihào	sign for positioning	表頭上寫一號，呌戊（即G）排號		排號 表頭上寫一號，呌戊（即G）排號 páihào sign for positioning	term_form+context+definition+romanization+gloss
-SR0005	AT_C01_3_2	C0001	SO003	WI003	排法	páifǎ	method for positioning	常用的有兩個排法一個高的，一個低的		排法 常用的有兩個排法一個高的，一個低的 páifǎ method for positioning	term_form+context+definition+romanization+gloss
-SR0006	AT_C02_1	C0002	SO001	WI001	剛啟發	gāng qǐfā	hard departure [point]	第⼀⽈剛啟發，其形號如下	"以其包括者俱係喜樂類之剛⾳，故名⽈剛。此啟發則書於五線之⾸線及次線，然書於⾸線者少，次線者多（數五線時以下線為
+SR0004	AT_C01_3	SO003	WI003	排號	páihào	sign for positioning	表頭上寫一號，呌戊（即G）排號		排號 表頭上寫一號，呌戊（即G）排號 páihào sign for positioning	term_form+context+definition+romanization+gloss
+SR0005	AT_C01_3_2	SO003	WI003	排法	páifǎ	method for positioning	常用的有兩個排法一個高的，一個低的		排法 常用的有兩個排法一個高的，一個低的 páifǎ method for positioning	term_form+context+definition+romanization+gloss
+SR0006	AT_C02_1	SO001	WI001	剛啟發	gāng qǐfā	hard departure [point]	第⼀⽈剛啟發，其形號如下	"以其包括者俱係喜樂類之剛⾳，故名⽈剛。此啟發則書於五線之⾸線及次線，然書於⾸線者少，次線者多（數五線時以下線為
 ⾸，上數之）。"	"剛啟發 第⼀⽈剛啟發，其形號如下 以其包括者俱係喜樂類之剛⾳，故名⽈剛。此啟發則書於五線之⾸線及次線，然書於⾸線者少，次線者多（數五線時以下線為
 ⾸，上數之）。 gāng qǐfā hard departure [point]"	term_form+context+definition+romanization+gloss
-SR0007	AT_C02_2	C0002	SO002	WI002	上品	shàngpǐn	upper category	其⼀⽇上品，乃⾃下⽽上遞⾼之調，其形號如此𝄞。此形號彷剛柔⼆記內之柔記。因此調⽤⾳惟有上起，⽽無下落，有⾃強不息之義。故以之為記焉。	其⼀⽇上品，乃⾃下⽽上遞⾼之調，其形號如此𝄞。此形號彷剛柔⼆記內之柔記。因此調⽤⾳惟有上起，⽽無下落，有⾃強不息之義。故以之為記焉。	上品 其⼀⽇上品，乃⾃下⽽上遞⾼之調，其形號如此𝄞。此形號彷剛柔⼆記內之柔記。因此調⽤⾳惟有上起，⽽無下落，有⾃強不息之義。故以之為記焉。 其⼀⽇上品，乃⾃下⽽上遞⾼之調，其形號如此𝄞。此形號彷剛柔⼆記內之柔記。因此調⽤⾳惟有上起，⽽無下落，有⾃強不息之義。故以之為記焉。 shàngpǐn upper category	term_form+context+definition+romanization+gloss
-SR0008	AT_C02_3	C0002	SO003	WI003	高排	gāopái	upper- positioning [sign]	高排從那裏排呢	高排屬那個字爲主呢？屬戊（即G），所以起名呌戊排。	高排 高排從那裏排呢 高排屬那個字爲主呢？屬戊（即G），所以起名呌戊排。 gāopái upper- positioning [sign]	term_form+context+definition+romanization+gloss
-SR0009	AT_C02_3_2	C0002	SO003	WI003	戊排	wùpái	5th heavenly stem-positioning [sign]	戊排怎麽指出來呢？	高排屬那個字爲主呢？屬戊（即G），所以起名呌戊排。	戊排 戊排怎麽指出來呢？ 高排屬那個字爲主呢？屬戊（即G），所以起名呌戊排。 wùpái 5th heavenly stem-positioning [sign]	term_form+context+definition+romanization+gloss
-SR0010	AT_C03_1	C0003	SO001	WI001	中啟發	zhōng qǐfā	middle-departure [point]	第二曰中啟發。	"第二曰中啟發。其形號如下 
+SR0007	AT_C02_2	SO002	WI002	上品	shàngpǐn	upper category	其⼀⽇上品，乃⾃下⽽上遞⾼之調，其形號如此𝄞。此形號彷剛柔⼆記內之柔記。因此調⽤⾳惟有上起，⽽無下落，有⾃強不息之義。故以之為記焉。	其⼀⽇上品，乃⾃下⽽上遞⾼之調，其形號如此𝄞。此形號彷剛柔⼆記內之柔記。因此調⽤⾳惟有上起，⽽無下落，有⾃強不息之義。故以之為記焉。	上品 其⼀⽇上品，乃⾃下⽽上遞⾼之調，其形號如此𝄞。此形號彷剛柔⼆記內之柔記。因此調⽤⾳惟有上起，⽽無下落，有⾃強不息之義。故以之為記焉。 其⼀⽇上品，乃⾃下⽽上遞⾼之調，其形號如此𝄞。此形號彷剛柔⼆記內之柔記。因此調⽤⾳惟有上起，⽽無下落，有⾃強不息之義。故以之為記焉。 shàngpǐn upper category	term_form+context+definition+romanization+gloss
+SR0008	AT_C02_3	SO003	WI003	高排	gāopái	upper- positioning [sign]	高排從那裏排呢	高排屬那個字爲主呢？屬戊（即G），所以起名呌戊排。	高排 高排從那裏排呢 高排屬那個字爲主呢？屬戊（即G），所以起名呌戊排。 gāopái upper- positioning [sign]	term_form+context+definition+romanization+gloss
+SR0009	AT_C02_3_2	SO003	WI003	戊排	wùpái	5th heavenly stem-positioning [sign]	戊排怎麽指出來呢？	高排屬那個字爲主呢？屬戊（即G），所以起名呌戊排。	戊排 戊排怎麽指出來呢？ 高排屬那個字爲主呢？屬戊（即G），所以起名呌戊排。 wùpái 5th heavenly stem-positioning [sign]	term_form+context+definition+romanization+gloss
+SR0010	AT_C03_1	SO001	WI001	中啟發	zhōng qǐfā	middle-departure [point]	第二曰中啟發。	"第二曰中啟發。其形號如下 
 剛樂柔樂俱用之。其包括之音無甚高下者，用於高聲中聲者多，最高聲下聲者則。以
 四聲俱可用，故又名曰合性啟發。此啟發即用於高聲中聲，又可用於最高下者。何？
 以最高下内俱有中音故也。"	"中啟發 第二曰中啟發。 第二曰中啟發。其形號如下 
 剛樂柔樂俱用之。其包括之音無甚高下者，用於高聲中聲者多，最高聲下聲者則。以
 四聲俱可用，故又名曰合性啟發。此啟發即用於高聲中聲，又可用於最高下者。何？
 以最高下内俱有中音故也。 zhōng qǐfā middle-departure [point]"	term_form+context+definition+romanization+gloss
-SR0011	AT_C03_2	C0003	SO002	WI002	中品	zhōngpǐn	middle category	⼀⽈中品，乃上下適中最平之調，其形號如此。	"⼀⽈中品，乃上下適中最平之調，其形號如此[]。此形號如梯式，蓋以此調之聲
+SR0011	AT_C03_2	SO002	WI002	中品	zhōngpǐn	middle category	⼀⽈中品，乃上下適中最平之調，其形號如此。	"⼀⽈中品，乃上下適中最平之調，其形號如此[]。此形號如梯式，蓋以此調之聲
 字可上可下猶階級之有升有降也。⾄於紀此形號於五線，則必於中線（乃第三
 線）。或⽤此品於遞⾼之調，則書於第⼆線，以其上起多⽽下落少也。或⽤此品
 於遞落之調，則紀於第四線，以其下落多⽽上起少也。"	"中品 ⼀⽈中品，乃上下適中最平之調，其形號如此。 ⼀⽈中品，乃上下適中最平之調，其形號如此[]。此形號如梯式，蓋以此調之聲
 字可上可下猶階級之有升有降也。⾄於紀此形號於五線，則必於中線（乃第三
 線）。或⽤此品於遞⾼之調，則書於第⼆線，以其上起多⽽下落少也。或⽤此品
 於遞落之調，則紀於第四線，以其下落多⽽上起少也。 zhōngpǐn middle category"	term_form+context+definition+romanization+gloss
-SR0012	AT_C04_1	C0004	SO001	WI001	柔啟發	róu qǐfā	soft-[departure] point	第三曰柔啟發。其形號如下[]	"以其包括者俱係悲怨類之柔音，故名曰柔。此啟發止用於下。亦如首啟發之止用於最
+SR0012	AT_C04_1	SO001	WI001	柔啟發	róu qǐfā	soft-[departure] point	第三曰柔啟發。其形號如下[]	"以其包括者俱係悲怨類之柔音，故名曰柔。此啟發止用於下。亦如首啟發之止用於最
 高也。以其止用於下，故其形號如下 []"	"柔啟發 第三曰柔啟發。其形號如下[] 以其包括者俱係悲怨類之柔音，故名曰柔。此啟發止用於下。亦如首啟發之止用於最
 高也。以其止用於下，故其形號如下 [] róu qǐfā soft-[departure] point"	term_form+context+definition+romanization+gloss
-SR0013	AT_C04_2	C0004	SO002	WI002	下品	xiàpǐn	lower category	⼀⽈下品，乃⾃上⽽下遞落之調，其形號如此[]。	"⼀⽈下品，乃⾃上⽽下遞落之調，其形號如此[]。此形號乃合⼆⼩圈⼀線，以為
+SR0013	AT_C04_2	SO002	WI002	下品	xiàpǐn	lower category	⼀⽈下品，乃⾃上⽽下遞落之調，其形號如此[]。	"⼀⽈下品，乃⾃上⽽下遞落之調，其形號如此[]。此形號乃合⼆⼩圈⼀線，以為
 記。蓋因其⾃最⾼⾳⾄最低⾳，其中可以兼⾼低平三等聲字，即如半環可以圓
 容⼆圈⼀線有包括始終之意也。⾄於紀此形號於五線，必於第五線或第四線，
 蓋為下落之調，⾃⾼漸低，總有⼗餘⾳，⾃第⼀線⽽下，五線四空無不畢。該
@@ -42,13 +42,13 @@ SR0013	AT_C04_2	C0004	SO002	WI002	下品	xiàpǐn	lower category	⼀⽈下品，
 容⼆圈⼀線有包括始終之意也。⾄於紀此形號於五線，必於第五線或第四線，
 蓋為下落之調，⾃⾼漸低，總有⼗餘⾳，⾃第⼀線⽽下，五線四空無不畢。該
 間有⼀⼆⾼起之⾳，亦不過第五線，上增⼀短線，即⾜⽤矣。 xiàpǐn lower category"	term_form+context+definition+romanization+gloss
-SR0014	AT_C04_3	C0004	SO003	WI003	低排	dīpái	lower-positioning [sign]	低排從那裏排呢？	低排屬那個字爲主呢？屬丁即F，所以起名呌丁排。丁即F排怎麼指出來呢？表頭上寫一號，呌丁即F排號，即是[]	低排 低排從那裏排呢？ 低排屬那個字爲主呢？屬丁即F，所以起名呌丁排。丁即F排怎麼指出來呢？表頭上寫一號，呌丁即F排號，即是[] dīpái lower-positioning [sign]	term_form+context+definition+romanization+gloss
-SR0015	AT_C04_3_2	C0004	SO003	WI003	丁排	dīngpái	4th heavenly stem-positioning [sign]	所以起名呌丁排	低排屬那個字爲主呢？屬丁即F，所以起名呌丁排。丁即F排怎麼指出來呢？表頭上寫一號，呌丁即F排號，即是[]	丁排 所以起名呌丁排 低排屬那個字爲主呢？屬丁即F，所以起名呌丁排。丁即F排怎麼指出來呢？表頭上寫一號，呌丁即F排號，即是[] dīngpái 4th heavenly stem-positioning [sign]	term_form+context+definition+romanization+gloss
-SR0016	AT_C11_1	C0011	SO001	WI001	間歇形號	jiànxiē xínghào	resting interval shape-sign	視樂中之節奏，以定間歇之遠近。指示間歇之遠近亦，如指示音聲之長短形號，而制爲八項辨認形號，甚要奏樂者，見樂圖内，有間歇形號，遂視樂師手勢抑揚之度，而各自隨宜停歇所奏之聲，歇已復奏。若無間歇形號，則奏樂者須盡知樂中之各項聲音始能奏之。倘知之不悉，則不知此聲於何處停，於何處復作，而其間歇之候非過，卽不及，音樂斷斷乎不能盡善矣！故配八音之度，而制爲八間歇形號。	視樂中之節奏，以定間歇之遠近。指示間歇之遠近亦，如指示音聲之長短形號，而制爲八項辨認形號，甚要奏樂者，見樂圖内，有間歇形號，遂視樂師手勢抑揚之度，而各自隨宜停歇所奏之聲，歇已復奏。若無間歇形號，則奏樂者須盡知樂中之各項聲音始能奏之。倘知之不悉，則不知此聲於何處停，於何處復作，而其間歇之候非過，卽不及，音樂斷斷乎不能盡善矣！故配八音之度，而制爲八間歇形號。	間歇形號 視樂中之節奏，以定間歇之遠近。指示間歇之遠近亦，如指示音聲之長短形號，而制爲八項辨認形號，甚要奏樂者，見樂圖内，有間歇形號，遂視樂師手勢抑揚之度，而各自隨宜停歇所奏之聲，歇已復奏。若無間歇形號，則奏樂者須盡知樂中之各項聲音始能奏之。倘知之不悉，則不知此聲於何處停，於何處復作，而其間歇之候非過，卽不及，音樂斷斷乎不能盡善矣！故配八音之度，而制爲八間歇形號。 視樂中之節奏，以定間歇之遠近。指示間歇之遠近亦，如指示音聲之長短形號，而制爲八項辨認形號，甚要奏樂者，見樂圖内，有間歇形號，遂視樂師手勢抑揚之度，而各自隨宜停歇所奏之聲，歇已復奏。若無間歇形號，則奏樂者須盡知樂中之各項聲音始能奏之。倘知之不悉，則不知此聲於何處停，於何處復作，而其間歇之候非過，卽不及，音樂斷斷乎不能盡善矣！故配八音之度，而制爲八間歇形號。 jiànxiē xínghào resting interval shape-sign	term_form+context+definition+romanization+gloss
-SR0017	AT_C11_2	C0011	SO002	WI002	間歇之侯	jiànxiē zhī hòu	timing of resting interval	凡間歇之候皆以八形號之度為準是故間歇之候。	凡間歇之候皆以八形號之度為準是故間歇之候。	間歇之侯 凡間歇之候皆以八形號之度為準是故間歇之候。 凡間歇之候皆以八形號之度為準是故間歇之候。 jiànxiē zhī hòu timing of resting interval	term_form+context+definition+romanization+gloss
-SR0018	AT_C11_3	C0011	SO003	WI003	歇號	xiēhào	rest sign	問○暫且停唱怎麼指出來呢？答○用號呌歇號滿足停唱的準分。	問○暫且停唱怎麼指出來呢？答○用號呌歇號滿足停唱的準分。	歇號 問○暫且停唱怎麼指出來呢？答○用號呌歇號滿足停唱的準分。 問○暫且停唱怎麼指出來呢？答○用號呌歇號滿足停唱的準分。 xiēhào rest sign	term_form+context+definition+romanization+gloss
-SR0019	AT_C15_3	C0015	SO003	WI003	正調	zhèngdiào	principal tonal category	soprano … 正調, 正品		正調 soprano … 正調, 正品 zhèngdiào principal tonal category	term_form+context+definition+romanization+gloss
-SR0020	AT_C15_3_2	C0015	SO003	WI003	正品	zhèngpǐn	principal category	問○四品都呌什麼名子呢？答○正品副品下品上品	問○唱正品的該是什麼人呢？答○有高聲的女人	正品 問○四品都呌什麼名子呢？答○正品副品下品上品 問○唱正品的該是什麼人呢？答○有高聲的女人 zhèngpǐn principal category	term_form+context+definition+romanization+gloss
-SR0021	AT_C16_3	C0016	SO003	WI003	副品	fùpǐn	secondary category	問○四品都呌什麼名子呢？答○正品副品下品上品	問○唱副品的該是什麼人呢?答○有低聲的女人	副品 問○四品都呌什麼名子呢？答○正品副品下品上品 問○唱副品的該是什麼人呢?答○有低聲的女人 fùpǐn secondary category	term_form+context+definition+romanization+gloss
-SR0022	AT_C17_3	C0017	SO003	WI003	上品	shàngpǐn	upper category	問○四品都呌什麼名子呢？答○正品副品下品上品	問○唱上品的該是什麼人呢？答○有高聲的男人。	上品 問○四品都呌什麼名子呢？答○正品副品下品上品 問○唱上品的該是什麼人呢？答○有高聲的男人。 shàngpǐn upper category	term_form+context+definition+romanization+gloss
-SR0023	AT_C18_3	C0018	SO003	WI003	下品	xiàpǐn	lower category	問○四品都呌什麼名子呢？答○正品副品下品上品	問○唱下品的該是什麼人呢？答○有低聲的男人。	下品 問○四品都呌什麼名子呢？答○正品副品下品上品 問○唱下品的該是什麼人呢？答○有低聲的男人。 xiàpǐn lower category	term_form+context+definition+romanization+gloss
+SR0014	AT_C04_3	SO003	WI003	低排	dīpái	lower-positioning [sign]	低排從那裏排呢？	低排屬那個字爲主呢？屬丁即F，所以起名呌丁排。丁即F排怎麼指出來呢？表頭上寫一號，呌丁即F排號，即是[]	低排 低排從那裏排呢？ 低排屬那個字爲主呢？屬丁即F，所以起名呌丁排。丁即F排怎麼指出來呢？表頭上寫一號，呌丁即F排號，即是[] dīpái lower-positioning [sign]	term_form+context+definition+romanization+gloss
+SR0015	AT_C04_3_2	SO003	WI003	丁排	dīngpái	4th heavenly stem-positioning [sign]	所以起名呌丁排	低排屬那個字爲主呢？屬丁即F，所以起名呌丁排。丁即F排怎麼指出來呢？表頭上寫一號，呌丁即F排號，即是[]	丁排 所以起名呌丁排 低排屬那個字爲主呢？屬丁即F，所以起名呌丁排。丁即F排怎麼指出來呢？表頭上寫一號，呌丁即F排號，即是[] dīngpái 4th heavenly stem-positioning [sign]	term_form+context+definition+romanization+gloss
+SR0016	AT_C11_1	SO001	WI001	間歇形號	jiànxiē xínghào	resting interval shape-sign	視樂中之節奏，以定間歇之遠近。指示間歇之遠近亦，如指示音聲之長短形號，而制爲八項辨認形號，甚要奏樂者，見樂圖内，有間歇形號，遂視樂師手勢抑揚之度，而各自隨宜停歇所奏之聲，歇已復奏。若無間歇形號，則奏樂者須盡知樂中之各項聲音始能奏之。倘知之不悉，則不知此聲於何處停，於何處復作，而其間歇之候非過，卽不及，音樂斷斷乎不能盡善矣！故配八音之度，而制爲八間歇形號。	視樂中之節奏，以定間歇之遠近。指示間歇之遠近亦，如指示音聲之長短形號，而制爲八項辨認形號，甚要奏樂者，見樂圖内，有間歇形號，遂視樂師手勢抑揚之度，而各自隨宜停歇所奏之聲，歇已復奏。若無間歇形號，則奏樂者須盡知樂中之各項聲音始能奏之。倘知之不悉，則不知此聲於何處停，於何處復作，而其間歇之候非過，卽不及，音樂斷斷乎不能盡善矣！故配八音之度，而制爲八間歇形號。	間歇形號 視樂中之節奏，以定間歇之遠近。指示間歇之遠近亦，如指示音聲之長短形號，而制爲八項辨認形號，甚要奏樂者，見樂圖内，有間歇形號，遂視樂師手勢抑揚之度，而各自隨宜停歇所奏之聲，歇已復奏。若無間歇形號，則奏樂者須盡知樂中之各項聲音始能奏之。倘知之不悉，則不知此聲於何處停，於何處復作，而其間歇之候非過，卽不及，音樂斷斷乎不能盡善矣！故配八音之度，而制爲八間歇形號。 視樂中之節奏，以定間歇之遠近。指示間歇之遠近亦，如指示音聲之長短形號，而制爲八項辨認形號，甚要奏樂者，見樂圖内，有間歇形號，遂視樂師手勢抑揚之度，而各自隨宜停歇所奏之聲，歇已復奏。若無間歇形號，則奏樂者須盡知樂中之各項聲音始能奏之。倘知之不悉，則不知此聲於何處停，於何處復作，而其間歇之候非過，卽不及，音樂斷斷乎不能盡善矣！故配八音之度，而制爲八間歇形號。 jiànxiē xínghào resting interval shape-sign	term_form+context+definition+romanization+gloss
+SR0017	AT_C11_2	SO002	WI002	間歇之侯	jiànxiē zhī hòu	timing of resting interval	凡間歇之候皆以八形號之度為準是故間歇之候。	凡間歇之候皆以八形號之度為準是故間歇之候。	間歇之侯 凡間歇之候皆以八形號之度為準是故間歇之候。 凡間歇之候皆以八形號之度為準是故間歇之候。 jiànxiē zhī hòu timing of resting interval	term_form+context+definition+romanization+gloss
+SR0018	AT_C11_3	SO003	WI003	歇號	xiēhào	rest sign	問○暫且停唱怎麼指出來呢？答○用號呌歇號滿足停唱的準分。	問○暫且停唱怎麼指出來呢？答○用號呌歇號滿足停唱的準分。	歇號 問○暫且停唱怎麼指出來呢？答○用號呌歇號滿足停唱的準分。 問○暫且停唱怎麼指出來呢？答○用號呌歇號滿足停唱的準分。 xiēhào rest sign	term_form+context+definition+romanization+gloss
+SR0019	AT_C15_3	SO003	WI003	正調	zhèngdiào	principal tonal category	soprano … 正調, 正品		正調 soprano … 正調, 正品 zhèngdiào principal tonal category	term_form+context+definition+romanization+gloss
+SR0020	AT_C15_3_2	SO003	WI003	正品	zhèngpǐn	principal category	問○四品都呌什麼名子呢？答○正品副品下品上品	問○唱正品的該是什麼人呢？答○有高聲的女人	正品 問○四品都呌什麼名子呢？答○正品副品下品上品 問○唱正品的該是什麼人呢？答○有高聲的女人 zhèngpǐn principal category	term_form+context+definition+romanization+gloss
+SR0021	AT_C16_3	SO003	WI003	副品	fùpǐn	secondary category	問○四品都呌什麼名子呢？答○正品副品下品上品	問○唱副品的該是什麼人呢?答○有低聲的女人	副品 問○四品都呌什麼名子呢？答○正品副品下品上品 問○唱副品的該是什麼人呢?答○有低聲的女人 fùpǐn secondary category	term_form+context+definition+romanization+gloss
+SR0022	AT_C17_3	SO003	WI003	上品	shàngpǐn	upper category	問○四品都呌什麼名子呢？答○正品副品下品上品	問○唱上品的該是什麼人呢？答○有高聲的男人。	上品 問○四品都呌什麼名子呢？答○正品副品下品上品 問○唱上品的該是什麼人呢？答○有高聲的男人。 shàngpǐn upper category	term_form+context+definition+romanization+gloss
+SR0023	AT_C18_3	SO003	WI003	下品	xiàpǐn	lower category	問○四品都呌什麼名子呢？答○正品副品下品上品	問○唱下品的該是什麼人呢？答○有低聲的男人。	下品 問○四品都呌什麼名子呢？答○正品副品下品上品 問○唱下品的該是什麼人呢？答○有低聲的男人。 xiàpǐn lower category	term_form+context+definition+romanization+gloss

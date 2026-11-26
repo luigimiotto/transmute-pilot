@@ -36,7 +36,7 @@ The tabular data are in the `data/` directory as UTF-8 tab-separated files:
 - `interpretations.tsv` — analytical claims linked to attestations.
 - `search_index.tsv` — searchable forms and text mapped back to attestations.
 
-An attestation is the central evidence record. Each attestation links to a source, witness, and concept. One attestation can have multiple editorial layers and multiple interpretations. Search-index records point back to attestations so that a user can find the same record by different forms.
+An attestation is the central evidence record. Each attestation links to a source and witness. Interpretations link occurrences to one or more proposed concepts, with a primary or alternative role and an epistemic status. Concepts can link to one broader category through parent_concept_id. One attestation can have multiple editorial layers and multiple interpretations. Search-index records point back to attestations so that a user can find the same record by different forms.
 
 The website is a read-only interface to these tables. The TSV files are available in this repository for inspection. Identifiers connect related rows across files; do not treat rows with the same Chinese form as duplicates.
 
@@ -56,3 +56,7 @@ The project dataset deposited on Zenodo is licensed under [Creative Commons Attr
 
 **Suggested project citation:** Miotto, Luigi. *TransMuTe: Chinese Translation of Music Theory Terminology* [dataset and software]. Zenodo. [https://doi.org/10.5281/zenodo.24508796](https://doi.org/10.5281/zenodo.24508796). Cite the specific version used. For historical evidence, also cite the primary work, consulted witness, and printed locator recorded in the relevant attestation.
 
+
+## Workshop schema revision
+
+See [SCHEMA_CHANGELOG.md](SCHEMA_CHANGELOG.md) for the migration from the deposited v0.1.0-pilot schema. The live working app supports alternative conceptual readings and optional inclusion of narrower categories. The Zenodo v0.1.0 files remain the historical release; the workshop revision has not replaced that deposit.

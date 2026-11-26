@@ -1,6 +1,7 @@
 import csv
 from pathlib import Path
 import streamlit as st
+from data_model import ConceptModel
 
 BASE = Path(__file__).parent / "data"
 
@@ -60,6 +61,7 @@ layers_by_att = {}
 for x in layers: layers_by_att.setdefault(x["attestation_id"], []).append(x)
 interp_by_att = {}
 for x in interpretations: interp_by_att.setdefault(x["attestation_id"], []).append(x)
+model = ConceptModel(concepts, interpretations)
 
 # Display source labels consistently by Chinese title and original publication date.
 source_display = {
@@ -74,6 +76,22 @@ def concept_label(concept):
     en = concept.get("preferred_label_en", "")
     zh = concept.get("modern_zh_label", "")
     return f"{en} · {zh}" if zh else en
+
+def assigned_labels(attestation):
+    return [concept_label(concept_by_id[cid])
+            for cid in sorted(model.concept_ids(attestation['attestation_id']))]
+
+def show_interpretation(claim):
+    cid = claim.get('concept_id', '')
+    if cid:
+        st.markdown('**Proposed concept:** ' + concept_label(concept_by_id[cid]))
+        st.caption('Reading: ' + claim.get('mapping_role', 'unspecified') +
+                   ' · Status: ' + (claim.get('epistemic_status') or 'not stated'))
+    st.write(claim.get('analysis_notes', ''))
+    if claim.get('source_notes') and not claim['source_notes'].startswith('[YOU FILL'):
+        st.caption('Evidence / references: ' + claim['source_notes'])
+    if claim.get('confidence'):
+        st.caption('Confidence: ' + claim['confidence'])
 
 with st.expander("Filter the corpus", expanded=False):
     source_options = [source_label(s["source_id"]) for s in sources if s.get("source_id")]
@@ -96,13 +114,14 @@ if mode.startswith("Zoom in"):
         a = att_by_id.get(aid)
         if not a: continue
         src = source_by_id.get(a.get("source_id", ""), {})
-        concept = concept_by_id.get(a.get("concept_id", ""), {})
+        linked_concepts = [concept_by_id[cid] for cid in model.concept_ids(aid)]
         if selected_source_labels and source_label(a.get("source_id", "")) not in selected_source_labels: continue
-        if selected_concept_labels and concept_label(concept) not in selected_concept_labels: continue
+        if selected_concept_labels and not set(assigned_labels(a)) & set(selected_concept_labels): continue
         # Search the normalized index, raw attestation, linked concept (including its modern Chinese label), and source metadata.
-        searchable = haystack(list(ix.values()) + list(a.values()) + list(concept.values()) + list(src.values()))
+        searchable = haystack(list(ix.values()) + list(a.values()) +
+                             [v for c in linked_concepts for v in c.values()] + list(src.values()))
         if not q or q in searchable:
-            found.append((a, src, concept))
+            found.append((a, src, linked_concepts))
     if q:
         st.subheader(f"{len(found)} matching attestations")
     else:
@@ -112,7 +131,7 @@ if mode.startswith("Zoom in"):
         with st.expander(f"{a.get('term_form_as_seen','')} · {source_label(a.get('source_id',''))} · {a.get('source_locator_verbatim','')}"):
             c1,c2=st.columns([1,2])
             with c1:
-                st.markdown(f"**Concept:** {concept_label(concept) or 'Unlinked'}")
+                st.markdown("**Proposed concepts:** " + ('; '.join(assigned_labels(a)) or 'Unlinked'))
                 st.markdown(f"**Source:** {source_label(a.get('source_id',''))}")
                 st.markdown(f"**Witness:** {witness_by_id.get(a.get('witness_id',''),{}).get('witness_description','')}")
                 st.markdown(f"**Record ID:** `{a.get('attestation_id','')}`")
@@ -131,16 +150,25 @@ if mode.startswith("Zoom in"):
             ins=interp_by_att.get(a.get("attestation_id",""),[])
             if ins:
                 st.markdown("**Interpretation**")
-                for it in ins: st.write(it.get("analysis_notes", ""))
+                for it in ins: show_interpretation(it)
 else:
     selected = st.selectbox("Choose a concept", list(label_to_concept)) if label_to_concept else None
     if selected:
         concept = label_to_concept[selected]
         st.subheader(f"Zoom out · {selected}")
         st.write(concept.get("scope_note", ""))
+        parent_id = concept.get('parent_concept_id', '')
+        if parent_id:
+            st.caption('Broader category: ' + concept_label(concept_by_id[parent_id]))
+        include_narrower = st.checkbox('Include narrower categories', value=False)
+        selected_ids = model.descendants(concept['concept_id']) if include_narrower else {concept['concept_id']}
+        st.caption('Categories are editorial tools for comparison, not a historical taxonomy. '
+                   'Provisional and alternative readings may bring an occurrence into more than one category.')
+        if include_narrower:
+            st.caption('Included categories: ' + '; '.join(concept_label(concept_by_id[c]) for c in sorted(selected_ids)))
         linked=[]
         for a in attestations:
-            if a.get("concept_id") != concept.get("concept_id"): continue
+            if not model.matches(a['attestation_id'], selected_ids): continue
             src=source_by_id.get(a.get("source_id", ""), {})
             if selected_source_labels and source_label(a.get("source_id","")) not in selected_source_labels: continue
             linked.append((a,src))
@@ -154,7 +182,7 @@ else:
                     st.text(a["definition_or_explanation_verbatim"])
                 for layer in layers_by_att.get(a.get("attestation_id",""),[]): st.write(f"{layer.get('layer_type','')}: {layer.get('text_value','')}")
                 for it in interp_by_att.get(a.get("attestation_id",""),[]):
-                    st.markdown("**Interpretive note**"); st.write(it.get("analysis_notes", ""))
+                    st.markdown("**Interpretive note**"); show_interpretation(it)
 
 st.divider()
 st.markdown('<div id="pilot-sources"></div>', unsafe_allow_html=True)

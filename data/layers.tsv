@@ -1,8 +1,8 @@
-﻿layer_id	attestation_id	layer_type	text_value	scheme_or_language	source_or_editorial_status	notes
+layer_id	attestation_id	layer_type	text_value	scheme_or_language	source_or_editorial_status	notes
 LYR_C01_1	AT_C01_1	romanization	qǐfā	Hanyu Pinyin with tone marks	editorial_normalization	
 LYG_C01_1	AT_C01_1	working_gloss	departure [point]	English	editorial_translation	
 LYR_C01_1_2	AT_C01_1_2	romanization	qǐfā	Hanyu Pinyin with tone marks	editorial_normalization	
-LYG_C01_1	AT_C01_1_2	working_gloss	departure [point]	English	editorial_translation	
+LYG_C01_1__AT_C01_1_2	AT_C01_1_2	working_gloss	departure [point]	English	editorial_translation	
 LYR_C01_2	AT_C01_2	romanization	pǐn	Hanyu Pinyin with tone marks	editorial_normalization	
 LYG_C01_2	AT_C01_2	working_gloss	category, class, level	English	editorial_translation	
 LYR_C01_3	AT_C01_3	romanization	páihào	Hanyu Pinyin with tone marks	editorial_normalization	
@@ -16,7 +16,7 @@ LYG_C02_2	AT_C02_2	working_gloss	upper category	English	editorial_translation
 LYR_C02_3	AT_C02_3	romanization	gāopái	Hanyu Pinyin with tone marks	editorial_normalization	
 LYG_C02_3	AT_C02_3	working_gloss	upper- positioning [sign]	English	editorial_translation	
 LYR_C02_3_2	AT_C02_3_2	romanization	wùpái	Hanyu Pinyin with tone marks	editorial_normalization	
-LYG_C02_3	AT_C02_3_2	working_gloss	5th heavenly stem-positioning [sign]	English	editorial_translation	
+LYG_C02_3__AT_C02_3_2	AT_C02_3_2	working_gloss	5th heavenly stem-positioning [sign]	English	editorial_translation	
 LYR_C03_1	AT_C03_1	romanization	zhōng qǐfā	Hanyu Pinyin with tone marks	editorial_normalization	
 LYG_C03_1	AT_C03_1	working_gloss	middle-departure [point]	English	editorial_translation	
 LYR_C03_2	AT_C03_2	romanization	zhōngpǐn	Hanyu Pinyin with tone marks	editorial_normalization	
