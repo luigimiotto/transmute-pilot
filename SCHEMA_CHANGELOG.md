@@ -6,7 +6,7 @@ This working revision develops the v0.1.0-pilot framework. It does not change th
 
 `interpretations.tsv` now has `concept_id` and `mapping_role` (`primary` or `alternative`). Each existing assignment has been moved from its attestation into its existing interpretation, retaining the original analysis, references, provisional status, and blank confidence. No competing historical reading has been invented. Additional, separately identified interpretations may propose other concepts for the same attestation and must supply their supporting argument and references.
 
-`attestations.tsv` and `search_index.tsv` no longer store a single `concept_id`. The app obtains concepts through interpretation records. Non-rejected concept-bearing interpretations participate in comparison, including provisional and alternative readings; their role and status are displayed. An occurrence appears once per comparison even if multiple readings match. Interpretations without a concept may still hold general analytical notes.
+`attestations.tsv` and `search_index.tsv` retain a deprecated primary-concept cache in `concept_id` for compatibility with older application processes during deployment. The revised app ignores these cache fields and obtains authoritative concept assignments through interpretation records. Regenerate the cache from primary interpretations when mappings change; it does not describe all possible readings. Non-rejected concept-bearing interpretations participate in comparison, including provisional and alternative readings; their role and status are displayed. An occurrence appears once per comparison even if multiple readings match. Interpretations without a concept may still hold general analytical notes.
 
 ## Broader and narrower categories
 

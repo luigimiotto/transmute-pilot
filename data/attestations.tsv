@@ -1,39 +1,39 @@
-attestation_id	work_item_id	source_id	witness_id	source_locator_verbatim	occurrence_context_type	term_form_as_seen	context_passage_verbatim	definition_or_explanation_verbatim	definition_status_at_this_location	transcription_status	extraction_notes
-AT_C01_1	CW01_1	SO001	WI001	340 lower reproduction, Chapter 五線所用啟發說	body_text	啟發	啟發者，乃包括，樂音自始至終，高下之形號也。	啟發者，乃包括，樂音自始至終，高下之形號也。	provided_here	verified_against_image	Picard & Thoraval (2014); Miotto
+attestation_id	work_item_id	source_id	witness_id	source_locator_verbatim	occurrence_context_type	term_form_as_seen	context_passage_verbatim	definition_or_explanation_verbatim	definition_status_at_this_location	transcription_status	extraction_notes	concept_id
+AT_C01_1	CW01_1	SO001	WI001	340 lower reproduction, Chapter 五線所用啟發說	body_text	啟發	啟發者，乃包括，樂音自始至終，高下之形號也。	啟發者，乃包括，樂音自始至終，高下之形號也。	provided_here	verified_against_image	Picard & Thoraval (2014); Miotto	C0001
 AT_C01_1_2	CW01_5	SO001	WI001	339 lower reproduction, Introduction	body_text	啓發	又凡奏樂之時，若不預知聲音之高下啓發，則不知繼續高下當作何等矣。	"又凡奏樂之時，若不預知聲音之高下啓發，則不知繼續高下當作何等矣。故因辨聲音高下，更定爲三啓發。樂未奏之先，於三啓發内，用一啓發書於五線之首，俾奏樂
-者如此一樂之首音則樂之究，竟無不明矣。"	provided_here	verified_against_image	Miotto (forthcoming 2027)
+者如此一樂之首音則樂之究，竟無不明矣。"	provided_here	verified_against_image	Miotto (forthcoming 2027)	C0001
 AT_C01_2	CW01_2	SO002	WI002	10a, Chapter 三品明調	body_text	品	"⽤上中下三品以明調之等差者，⼤凡作樂必有⾼⾳低⾳平⾳之三等。若不設⼀
 準則，則⾼低無憑。故⽤上中下三品以紀⼀曲之始終為何聲調也。"	"⽤上中下三品以明調之等差者，⼤凡作樂必有⾼⾳低⾳平⾳之三等。若不設⼀
-準則，則⾼低無憑。故⽤上中下三品以紀⼀曲之始終為何聲調也。"	provided_here	verified_against_image	Theobald (2024)
-AT_C01_3	CW01_3	SO003	WI003	條理詳解，第三段，上卷，5	body_text	排號	表頭上寫一號，呌戊（即G）排號		not_provided_here	verified_against_image	[YOU FILL: pages/sections searched, including no-result coverage]
-AT_C01_3_2	CW01_4	SO003	WI003	條理詳解，第三段，上卷，5	body_text	排法	常用的有兩個排法一個高的，一個低的		not_provided_here	verified_against_image	
+準則，則⾼低無憑。故⽤上中下三品以紀⼀曲之始終為何聲調也。"	provided_here	verified_against_image	Theobald (2024)	C0001
+AT_C01_3	CW01_3	SO003	WI003	條理詳解，第三段，上卷，5	body_text	排號	表頭上寫一號，呌戊（即G）排號		not_provided_here	verified_against_image	[YOU FILL: pages/sections searched, including no-result coverage]	C0001
+AT_C01_3_2	CW01_4	SO003	WI003	條理詳解，第三段，上卷，5	body_text	排法	常用的有兩個排法一個高的，一個低的		not_provided_here	verified_against_image		C0001
 AT_C02_1	CW02_1	SO001	WI001	340 lower reproduction, Chapter 五線所用啟發說	body_text	剛啟發	第⼀⽈剛啟發，其形號如下	"以其包括者俱係喜樂類之剛⾳，故名⽈剛。此啟發則書於五線之⾸線及次線，然書於⾸線者少，次線者多（數五線時以下線為
-⾸，上數之）。"	provided_here	verified_against_image	Picard & Thoraval (2014)
-AT_C02_2	CW02_2	SO002	WI002	10a, Chapter 三品明調	body_text	上品	其⼀⽇上品，乃⾃下⽽上遞⾼之調，其形號如此𝄞。此形號彷剛柔⼆記內之柔記。因此調⽤⾳惟有上起，⽽無下落，有⾃強不息之義。故以之為記焉。	其⼀⽇上品，乃⾃下⽽上遞⾼之調，其形號如此𝄞。此形號彷剛柔⼆記內之柔記。因此調⽤⾳惟有上起，⽽無下落，有⾃強不息之義。故以之為記焉。	partial_here	verified_against_image	Theobald (2024)
-AT_C02_3	CW02_3	SO003	WI003	條理詳解，第三段，上卷，5	body_text	高排	高排從那裏排呢	高排屬那個字爲主呢？屬戊（即G），所以起名呌戊排。	partial_here	verified_against_image	[YOU FILL: pages/sections searched, including no-result coverage]
-AT_C02_3_2	CW02_4	SO003	WI003	條理詳解，第三段，上卷，5	body_text	戊排	戊排怎麽指出來呢？	高排屬那個字爲主呢？屬戊（即G），所以起名呌戊排。	partial_here	verified_against_image	
+⾸，上數之）。"	provided_here	verified_against_image	Picard & Thoraval (2014)	C0002
+AT_C02_2	CW02_2	SO002	WI002	10a, Chapter 三品明調	body_text	上品	其⼀⽇上品，乃⾃下⽽上遞⾼之調，其形號如此𝄞。此形號彷剛柔⼆記內之柔記。因此調⽤⾳惟有上起，⽽無下落，有⾃強不息之義。故以之為記焉。	其⼀⽇上品，乃⾃下⽽上遞⾼之調，其形號如此𝄞。此形號彷剛柔⼆記內之柔記。因此調⽤⾳惟有上起，⽽無下落，有⾃強不息之義。故以之為記焉。	partial_here	verified_against_image	Theobald (2024)	C0002
+AT_C02_3	CW02_3	SO003	WI003	條理詳解，第三段，上卷，5	body_text	高排	高排從那裏排呢	高排屬那個字爲主呢？屬戊（即G），所以起名呌戊排。	partial_here	verified_against_image	[YOU FILL: pages/sections searched, including no-result coverage]	C0002
+AT_C02_3_2	CW02_4	SO003	WI003	條理詳解，第三段，上卷，5	body_text	戊排	戊排怎麽指出來呢？	高排屬那個字爲主呢？屬戊（即G），所以起名呌戊排。	partial_here	verified_against_image		C0002
 AT_C03_1	CW03_1	SO001	WI001	340 lower reproduction, 341 upper reprodution,  Chapter 五線所用啟發說	body_text	中啟發	第二曰中啟發。	"第二曰中啟發。其形號如下 
 剛樂柔樂俱用之。其包括之音無甚高下者，用於高聲中聲者多，最高聲下聲者則。以
 四聲俱可用，故又名曰合性啟發。此啟發即用於高聲中聲，又可用於最高下者。何？
-以最高下内俱有中音故也。"	partial_here	verified_against_image	[YOU FILL: pages/sections searched, including no-result coverage]
+以最高下内俱有中音故也。"	partial_here	verified_against_image	[YOU FILL: pages/sections searched, including no-result coverage]	C0003
 AT_C03_2	CW03_2	SO002	WI002	10b-11a, Chapter 三品明調	body_text	中品	⼀⽈中品，乃上下適中最平之調，其形號如此。	"⼀⽈中品，乃上下適中最平之調，其形號如此[]。此形號如梯式，蓋以此調之聲
 字可上可下猶階級之有升有降也。⾄於紀此形號於五線，則必於中線（乃第三
 線）。或⽤此品於遞⾼之調，則書於第⼆線，以其上起多⽽下落少也。或⽤此品
-於遞落之調，則紀於第四線，以其下落多⽽上起少也。"	provided_here	verified_against_image	[YOU FILL: pages/sections searched, including no-result coverage]
+於遞落之調，則紀於第四線，以其下落多⽽上起少也。"	provided_here	verified_against_image	[YOU FILL: pages/sections searched, including no-result coverage]	C0003
 AT_C04_1	CW04_1	SO001	WI001	341 lower reprodution,  Chapter 五線所用啟發說	body_text	柔啟發	第三曰柔啟發。其形號如下[]	"以其包括者俱係悲怨類之柔音，故名曰柔。此啟發止用於下。亦如首啟發之止用於最
-高也。以其止用於下，故其形號如下 []"	provided_here	verified_against_image	Picard and Thoraval (2014)
+高也。以其止用於下，故其形號如下 []"	provided_here	verified_against_image	Picard and Thoraval (2014)	C0004
 AT_C04_2	CW04_2	SO002	WI002	11a-11b, Chapter 三品明調	body_text	下品	⼀⽈下品，乃⾃上⽽下遞落之調，其形號如此[]。	"⼀⽈下品，乃⾃上⽽下遞落之調，其形號如此[]。此形號乃合⼆⼩圈⼀線，以為
 記。蓋因其⾃最⾼⾳⾄最低⾳，其中可以兼⾼低平三等聲字，即如半環可以圓
 容⼆圈⼀線有包括始終之意也。⾄於紀此形號於五線，必於第五線或第四線，
 蓋為下落之調，⾃⾼漸低，總有⼗餘⾳，⾃第⼀線⽽下，五線四空無不畢。該
-間有⼀⼆⾼起之⾳，亦不過第五線，上增⼀短線，即⾜⽤矣。"	provided_here	verified_against_image	[YOU FILL: pages/sections searched, including no-result coverage]
-AT_C04_3	CW04_3	SO003	WI003	條理詳解，第三段，上卷，6	body_text	低排	低排從那裏排呢？	低排屬那個字爲主呢？屬丁即F，所以起名呌丁排。丁即F排怎麼指出來呢？表頭上寫一號，呌丁即F排號，即是[]	partial_here	verified_against_image	[YOU FILL: pages/sections searched, including no-result coverage]
-AT_C04_3_2	CW04_4	SO003	WI003	條理詳解，第三段，上卷，6	body_text	丁排	所以起名呌丁排	低排屬那個字爲主呢？屬丁即F，所以起名呌丁排。丁即F排怎麼指出來呢？表頭上寫一號，呌丁即F排號，即是[]	partial_here	verified_against_image	
-AT_C11_1	CW11_1	SO001	WI001	371 lower reproduction, 372 upper reproduction	body_text	間歇形號	視樂中之節奏，以定間歇之遠近。指示間歇之遠近亦，如指示音聲之長短形號，而制爲八項辨認形號，甚要奏樂者，見樂圖内，有間歇形號，遂視樂師手勢抑揚之度，而各自隨宜停歇所奏之聲，歇已復奏。若無間歇形號，則奏樂者須盡知樂中之各項聲音始能奏之。倘知之不悉，則不知此聲於何處停，於何處復作，而其間歇之候非過，卽不及，音樂斷斷乎不能盡善矣！故配八音之度，而制爲八間歇形號。	視樂中之節奏，以定間歇之遠近。指示間歇之遠近亦，如指示音聲之長短形號，而制爲八項辨認形號，甚要奏樂者，見樂圖内，有間歇形號，遂視樂師手勢抑揚之度，而各自隨宜停歇所奏之聲，歇已復奏。若無間歇形號，則奏樂者須盡知樂中之各項聲音始能奏之。倘知之不悉，則不知此聲於何處停，於何處復作，而其間歇之候非過，卽不及，音樂斷斷乎不能盡善矣！故配八音之度，而制爲八間歇形號。	provided_here	verified_against_image	[YOU FILL: pages/sections searched, including no-result coverage]
-AT_C11_2	CW11_2	SO002	WI002	61a	body_text	間歇之侯	凡間歇之候皆以八形號之度為準是故間歇之候。	凡間歇之候皆以八形號之度為準是故間歇之候。	partial_here	[YOU FILL: verified_against_image / OCR_unverified / uncertain]	[YOU FILL: pages/sections searched, including no-result coverage]
-AT_C11_3	CW11_3	SO003	WI003	條理詳解，第六段，上卷，12	body_text	歇號	問○暫且停唱怎麼指出來呢？答○用號呌歇號滿足停唱的準分。	問○暫且停唱怎麼指出來呢？答○用號呌歇號滿足停唱的準分。	partial_here	verified_against_image	[YOU FILL: pages/sections searched, including no-result coverage]
-AT_C15_3	CW15_3	SO003	WI003	Appendix, ix	body_text	正調	soprano … 正調, 正品		not_provided_here	verified_against_image	[YOU FILL: pages/sections searched, including no-result coverage]
-AT_C15_3_2	CW15_4	SO003	WI003	條理詳解，第九段，上卷，19	body_text	正品	問○四品都呌什麼名子呢？答○正品副品下品上品	問○唱正品的該是什麼人呢？答○有高聲的女人	provided_here	verified_against_image	
-AT_C16_3	CW16_3	SO003	WI003	條理詳解，第九段，上卷，19	body_text	副品	問○四品都呌什麼名子呢？答○正品副品下品上品	問○唱副品的該是什麼人呢?答○有低聲的女人	provided_here	verified_against_image	[YOU FILL: pages/sections searched, including no-result coverage]
-AT_C17_3	CW17_3	SO003	WI003	條理詳解，第九段，上卷，19	body_text	上品	問○四品都呌什麼名子呢？答○正品副品下品上品	問○唱上品的該是什麼人呢？答○有高聲的男人。	provided_here	verified_against_image	[YOU FILL: pages/sections searched, including no-result coverage]
-AT_C18_3	CW18_3	SO003	WI003	條理詳解，第九段，上卷，19	body_text	下品	問○四品都呌什麼名子呢？答○正品副品下品上品	問○唱下品的該是什麼人呢？答○有低聲的男人。	provided_here	verified_against_image	[YOU FILL: pages/sections searched, including no-result coverage]
+間有⼀⼆⾼起之⾳，亦不過第五線，上增⼀短線，即⾜⽤矣。"	provided_here	verified_against_image	[YOU FILL: pages/sections searched, including no-result coverage]	C0004
+AT_C04_3	CW04_3	SO003	WI003	條理詳解，第三段，上卷，6	body_text	低排	低排從那裏排呢？	低排屬那個字爲主呢？屬丁即F，所以起名呌丁排。丁即F排怎麼指出來呢？表頭上寫一號，呌丁即F排號，即是[]	partial_here	verified_against_image	[YOU FILL: pages/sections searched, including no-result coverage]	C0004
+AT_C04_3_2	CW04_4	SO003	WI003	條理詳解，第三段，上卷，6	body_text	丁排	所以起名呌丁排	低排屬那個字爲主呢？屬丁即F，所以起名呌丁排。丁即F排怎麼指出來呢？表頭上寫一號，呌丁即F排號，即是[]	partial_here	verified_against_image		C0004
+AT_C11_1	CW11_1	SO001	WI001	371 lower reproduction, 372 upper reproduction	body_text	間歇形號	視樂中之節奏，以定間歇之遠近。指示間歇之遠近亦，如指示音聲之長短形號，而制爲八項辨認形號，甚要奏樂者，見樂圖内，有間歇形號，遂視樂師手勢抑揚之度，而各自隨宜停歇所奏之聲，歇已復奏。若無間歇形號，則奏樂者須盡知樂中之各項聲音始能奏之。倘知之不悉，則不知此聲於何處停，於何處復作，而其間歇之候非過，卽不及，音樂斷斷乎不能盡善矣！故配八音之度，而制爲八間歇形號。	視樂中之節奏，以定間歇之遠近。指示間歇之遠近亦，如指示音聲之長短形號，而制爲八項辨認形號，甚要奏樂者，見樂圖内，有間歇形號，遂視樂師手勢抑揚之度，而各自隨宜停歇所奏之聲，歇已復奏。若無間歇形號，則奏樂者須盡知樂中之各項聲音始能奏之。倘知之不悉，則不知此聲於何處停，於何處復作，而其間歇之候非過，卽不及，音樂斷斷乎不能盡善矣！故配八音之度，而制爲八間歇形號。	provided_here	verified_against_image	[YOU FILL: pages/sections searched, including no-result coverage]	C0011
+AT_C11_2	CW11_2	SO002	WI002	61a	body_text	間歇之侯	凡間歇之候皆以八形號之度為準是故間歇之候。	凡間歇之候皆以八形號之度為準是故間歇之候。	partial_here	[YOU FILL: verified_against_image / OCR_unverified / uncertain]	[YOU FILL: pages/sections searched, including no-result coverage]	C0011
+AT_C11_3	CW11_3	SO003	WI003	條理詳解，第六段，上卷，12	body_text	歇號	問○暫且停唱怎麼指出來呢？答○用號呌歇號滿足停唱的準分。	問○暫且停唱怎麼指出來呢？答○用號呌歇號滿足停唱的準分。	partial_here	verified_against_image	[YOU FILL: pages/sections searched, including no-result coverage]	C0011
+AT_C15_3	CW15_3	SO003	WI003	Appendix, ix	body_text	正調	soprano … 正調, 正品		not_provided_here	verified_against_image	[YOU FILL: pages/sections searched, including no-result coverage]	C0015
+AT_C15_3_2	CW15_4	SO003	WI003	條理詳解，第九段，上卷，19	body_text	正品	問○四品都呌什麼名子呢？答○正品副品下品上品	問○唱正品的該是什麼人呢？答○有高聲的女人	provided_here	verified_against_image		C0015
+AT_C16_3	CW16_3	SO003	WI003	條理詳解，第九段，上卷，19	body_text	副品	問○四品都呌什麼名子呢？答○正品副品下品上品	問○唱副品的該是什麼人呢?答○有低聲的女人	provided_here	verified_against_image	[YOU FILL: pages/sections searched, including no-result coverage]	C0016
+AT_C17_3	CW17_3	SO003	WI003	條理詳解，第九段，上卷，19	body_text	上品	問○四品都呌什麼名子呢？答○正品副品下品上品	問○唱上品的該是什麼人呢？答○有高聲的男人。	provided_here	verified_against_image	[YOU FILL: pages/sections searched, including no-result coverage]	C0017
+AT_C18_3	CW18_3	SO003	WI003	條理詳解，第九段，上卷，19	body_text	下品	問○四品都呌什麼名子呢？答○正品副品下品上品	問○唱下品的該是什麼人呢？答○有低聲的男人。	provided_here	verified_against_image	[YOU FILL: pages/sections searched, including no-result coverage]	C0018
