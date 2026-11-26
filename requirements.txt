@@ -1,1 +1,2 @@
 streamlit>=1.40,<2
+# Workshop schema revision: reload the app with the standard-library data_model module.
